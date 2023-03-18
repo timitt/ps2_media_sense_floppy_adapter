@@ -1,0 +1,157 @@
+{COMPONENT F:\ELEKTRONIIKKA\PROJECTS\PS2_MEDIA_SENSE_FLOPPY_ADAPTER\PS2_MEDIA_SENSE_FLOPPY_ADAPTER.SYM
+
+ {ENVIRONMENT
+  {PDIFvrev 3.00}
+  {Program "CUPL(WM) Version 5.0a"}
+  {DBtype "Schematic"}
+  {DBvrev 1.01}
+  {DBtime "Mon Jan 16 20:29:05 2023 "}
+  {DBunit "MIL"}
+  {DBgrid 10}
+  {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
+          "PINNAM" 6 "PINCON" 4 "REFDES" 2 "ATTR" 6 "SDOT" 1 
+          "DEVICE" 5 "OUTLIN" 5 "ATTR2" 6 "NOTES" 6 "NETNAM" 4 
+          "CMPNAM" 5 "BORDER" 5}
+ }
+
+ {USER
+  {VIEW
+   {Mode SYMB}
+   {Nlst OPEN}
+   {Vw 0 0 2}
+   {Lv 12 2 2 2 0 0 2 2 2 2 0 0 2 1 2 0 0 0 0}
+   {Gs 10 10}
+  }
+ }
+
+ {DISPLAY
+  [Ly "PINNUM"]
+  [Ls "SOLID"][Wd 0]
+  [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+ }
+
+ {SYMBOL
+  {PIN_DEF
+   [Ly "PINCON"]
+   {P HDSEL_IN {Pt "INPUT"}{Lq 0}{Ploc 100 200}}
+   {P DSEL {Pt "INPUT"}{Lq 0}{Ploc 100 180}}
+   {P DRATE1 {Pt "INPUT"}{Lq 0}{Ploc 100 160}}
+   {P DRATE0 {Pt "INPUT"}{Lq 0}{Ploc 100 140}}
+   {P USE_HDSE {Pt "INPUT"}{Lq 0}{Ploc 100 120}}
+   {P USE_OLD_ {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
+   {P USE_NEWE {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
+   {P MTID0 {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
+   {P DTYPE1 {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
+   {P HDSEL_OU {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
+   {P MTID1 {Pt "I/O"}{Lq 0}{Ploc 340 20}}
+   {P DTYPE0 {Pt "I/O"}{Lq 0}{Ploc 340 40}}
+  }
+
+  {PKG
+   [Ly "REFDES"]
+   [Ts 25][Tj "CB"][Tr 0][Tm "N"]
+   {Rdl 220 230}
+
+   [Ly "PINNUM"]
+   [Ts 15][Tj "RC"]
+   {Pnl 120 210}
+   {Pnl 120 190}
+   {Pnl 120 170}
+   {Pnl 120 150}
+   {Pnl 120 130}
+   {Pnl 120 110}
+   {Pnl 120 90}
+   {Pnl 120 70}
+   {Pnl 120 50}
+   {Pnl 120 30}
+   [Ts 15][Tj "LC"]
+   {Pnl 320 30}
+   {Pnl 320 50}
+
+   {Sd A 1 2 3 4 6 7 8 14 17 19 15 16}
+  }
+
+  {PIC
+   [Ly "GATE"]
+   [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+   {R 130 220 310 0}
+   {L 130 200 100 200}
+   {L 130 180 100 180}
+   {L 130 160 100 160}
+   {L 130 140 100 140}
+   {L 130 120 100 120}
+   {L 130 100 100 100}
+   {L 130 80 100 80}
+   {L 130 60 100 60}
+   {L 130 40 100 40}
+   {L 130 20 100 20}
+   {L 310 20 340 20}
+   {L 310 40 340 40}
+   [Ly "PINNAM"]
+   [Tj "LC"]
+   {T "HDSEL_IN" 140 200}
+   {T "DSEL" 140 180}
+   {T "DRATE1" 140 160}
+   {T "DRATE0" 140 140}
+   {T "USE_HDSE" 140 120}
+   {T "USE_OLD_" 140 100}
+   {T "USE_NEWE" 140 80}
+   {T "MTID0" 140 60}
+   {T "DTYPE1" 140 40}
+   {T "HDSEL_OU" 140 20}
+   [Tj "RC"]
+   {T "MTID1" 300 20}
+   {T "DTYPE0" 300 40}
+   [Ly "DEVICE"]
+   [Tj "CT"]
+   {T "G16V8S" 220 -10}
+  }
+
+  {ATR
+   {IN
+    {Org 100 20}
+    {Ty 255}
+   }
+   {EX
+    [Ly "ATTR2"]
+    [Ts 12][Tj "CT"][Tr 0][Tm "N"]
+    {At PLD F:\ELEKTRONIIKKA\PROJECTS\PS2_MEDIA_SENSE_FLOPPY_ADAPTER\PS2_MEDIA_SENSE_FLOPPY_ADAPTER 220 220}
+   }
+  }
+ }
+
+ {DETAIL
+  {ANNOTATE
+  }
+
+  {NET_DEF
+   {N HDSEL_IN
+   }
+   {N DSEL
+   }
+   {N DRATE1
+   }
+   {N DRATE0
+   }
+   {N USE_HDSE
+   }
+   {N USE_OLD_
+   }
+   {N USE_NEWE
+   }
+   {N MTID0
+   }
+   {N DTYPE1
+   }
+   {N HDSEL_OU
+   }
+   {N MTID1
+   }
+   {N DTYPE0
+   }
+  }
+
+  {SUBCOMP
+  }
+ }
+}

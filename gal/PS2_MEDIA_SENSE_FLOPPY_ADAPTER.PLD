@@ -1,0 +1,32 @@
+Name     ps2_media_sense_floppy_adapter ;
+PartNo   00 ;
+Date     12/01/2023 ;
+Revision 01 ;
+Designer Timi Tuohenmaa ;
+Company  TT ;
+Assembly None ;
+Location  ;
+Device   g16v8 ;
+
+/* *************** INPUT PINS *********************/
+PIN 1   = hdsel_in                ; /* floppy drive outputs hd/dd (gotek can be configured for this) */ 
+PIN 2   = dsel                    ; /* drive select pin */ 
+PIN 3   = drate1                  ; /* data rate pin 1 */ 
+PIN 4   = drate0                  ; /* data rate pin 0 */ 
+PIN 6   = use_hdsel_in            ; /* pin shorted to gnd enables use of hdsel_in */
+PIN 7   = use_old_floppy          ; /* pin shorted to gnd identifies as 1.2M floppy */ 
+PIN 8   = use_newest_floppy       ; /* pin shorted to gnd identifies as 2.88M floppy */
+
+/* *************** OUTPUT PINS *********************/
+PIN 14  = mtid0                   ; /* media type id 0 */ 
+PIN 15  = mtid1                   ; /* media type id 1 */ 
+PIN 16  = dtype0                  ; /* device type 0 */ 
+PIN 17  = dtype1                  ; /* device type 1 */ 
+PIN 19  = hdsel_out               ; /* hdsel from controller to drive */
+
+
+mtid0 = dsel # (hdsel_in & !use_hdsel_in);
+mtid1 = 'b'1;
+dtype0 = dsel # !use_newest_floppy;
+dtype1 = dsel # !use_old_floppy;
+hdsel_out = drate1;

@@ -1,0 +1,38 @@
+%SIGNAL
+PIN   4 =  drate0 
+PIN   3 =  drate1 
+PIN   2 =  dsel 
+PIN  16 =  dtype0 
+PIN  17 =  dtype1 
+PIN   1 =  hdsel_in 
+PIN  19 =  hdsel_out 
+PIN  14 =  mtid0 
+PIN  15 =  mtid1 
+PIN   6 =  use_hdsel_in 
+PIN   8 =  use_newest_floppy 
+PIN   7 =  use_old_floppy 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+dtype0 =>
+    dsel
+  # !use_newest_floppy
+
+dtype1 =>
+    dsel
+  # !use_old_floppy
+
+hdsel_out =>
+    drate1
+
+mtid0 =>
+    dsel
+  # hdsel_in & !use_hdsel_in
+
+mtid1 =>
+    1 
+
+%END
