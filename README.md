@@ -9,6 +9,8 @@ It should be possible to use multiple drives with this adapter.
 
 1.2 MB FDD mode is currently untested. My guess is that 1.2 MB drive can't be used as A drive.
 
+![Image of build adapter](https://github.com/timitt/ps2_media_sense_floppy_adapter/blob/adbc02428d3b28c48bffed8c2d1066e51f21f503/built_adapter.jpg)
+
 ## Jumpers
 
 If neither 1.2 floppy and 2.88 floppy jumpers are shorted then drive is 1.44 MB floppy.
