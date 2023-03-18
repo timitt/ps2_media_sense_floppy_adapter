@@ -1,9 +1,11 @@
 # PS/2 Media Sense Floppy Adapter
 
-This adapter allow to use standard floppy drive or Gotek drive (with FlashFloppy firmware) on IBM PS/2 computers
-that have Media Sense drives.
+This adapter allows to use standard floppy drive or Gotek drive (with FlashFloppy firmware) on IBM PS/2 computers
+that have Media Sense drives. Using this adapter you can boot from Starter Disk and configure your computer.
+Also error codes regarding floppy drive are history.
 
 Adapter allows to be configured to 1.44 MB and 2.88 MB FDD drive with Media Sense.
+This is not tested with real 2.88 MB though as I do not own one.
 
 It should be possible to use multiple drives with this adapter.
 
@@ -15,7 +17,7 @@ It should be possible to use multiple drives with this adapter.
 
 If neither 1.2 floppy and 2.88 floppy jumpers are shorted then drive is 1.44 MB floppy.
 
-Shorting JP1 pins 2 and 3 (bottom ones) you send density info from computer which is normal way floppy drives work.
+Shorting JP1 pins 2 and 3 (bottom ones) you send density info from computer which is the normal way floppy drives work.
 However later 1.44 MB and likely 2.88 MB drives do not use this signal.
 
 Gotek can be configured to send density info from drive and therefore actually send Media Sense info.
